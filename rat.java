@@ -19,11 +19,18 @@ public class Main {
         for(i=0;i<n;i++)
         { c++;
             sum=sum+a[i];
-            if(sum>t)
+            if(sum>=t)
             {
                 break;
             }
         }
-System.out.println(c);
+        
+        
+         if (sum < t) {
+            System.out.println(0);
+        } else {
+            System.out.println(c);
+        }
+
 }
 }
